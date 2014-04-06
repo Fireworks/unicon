@@ -1,0 +1,16 @@
+{
+  "name": "unicon",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.5.1",
+    "hjs": "*",
+    "less-middleware": "~0.1.15",
+    "connect-multiparty": "^1.0.3",
+    "aws-sdk": "^2.0.0-rc13",
+    "mongoose": "^3.8.8"
+  }
+}

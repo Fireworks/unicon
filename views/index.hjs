@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unicon - Unifying Avatars</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="container">
+            <div id="main-box">
+                {{#message}}
+                <div class="message">
+                    {{message}}
+                </div>
+                {{/message}}
+                <div class="row" id="unicon-info">
+                    <div class="box-title">
+                        What is Unicon?
+                    </div>
+                    <div class="box-text">
+                        Unicon is a simple solution to unifying your avatars and profile pictures.  Any service that uses Unicon can easily use your photo which means that you no longer have to worry about uploading a picture on every site you use!
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="row">
+                    <div class="box-title">
+                        Unicon for Users...
+                    </div>
+                </div>
+                <div class="row" id="unicon-users">
+                    <div class="col-half">
+                        <div class="col-title">
+                            Add/Change Your Photo
+                        </div>
+                        <form id="add-user" method="post" action="/add" enctype="multipart/form-data">
+                            <input type="email" size="32" name="email" placeholder="Enter email..." required />
+                            <input type="file" size="30" name="image" required/>
+                            <br/>
+                            <input type="submit" value="Add Photo" />
+                        </form>
+                    </div>
+                    <div class="col-half">
+                        <div class="col-title">
+                            Remove Your Photo
+                        </div>
+                        <form id="remove-user" method="post" action="/remove" enctype="multipart/form-data">
+                            <input type="email" size="32" name="email" placeholder="Enter email..." required/>
+                            <br/>
+                            <input type="submit" value="Remove Photo" />
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="separator"></div>
+                <div class="row">
+                    <div class="box-title">
+                        Unicon for Services...
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-center">
+                        <span class="num">1</span> Create md5 hash of email (test@example.com)<br/>
+                        <span class="num">2</span> Get picture by structuring url as follows:<br/>
+                        <div class="message">http://unicon.herokuapp.com/images/{md5}.png</div>
+                    </div>
+                </div>
+                <div id="footer">
+                    Created by Justin Hundley. Not intended for public use.
+                </div>
+            </div>
+        </div>
+    </body>
+    <!--todo: implement file dropper in form
+    <script src="/javascripts/dropzone.js"></script>
+    -->
+</html>
