@@ -61,7 +61,7 @@
                     <div class="col-center">
                         <span class="num">1</span> Create md5 hash of email (test@example.com)<br/>
                         <span class="num">2</span> Get picture by structuring url as follows:<br/>
-                        <div class="message">http://unicon.herokuapp.com/images/{md5}.png</div>
+                        <div class="message">http://unicon.herokuapp.com/images/{md5}</div>
                     </div>
                 </div>
                 <div id="footer">
